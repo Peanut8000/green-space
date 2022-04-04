@@ -14,5 +14,21 @@ html {
 }
 
 body {
-  margin-bottom: 60px;
+  background-color: #F3FFF8;
 }
+
+.bg-dark-green {
+    background-color: #71A389;
+}
+
+.index-btn {
+    margin: 50px;
+    background-color: #71A389;
+    padding: 20px 50px;
+    border-radius: 100px;
+    transition: all 0.3s;
+}
+
+    .index-btn:hover {
+        box-shadow: 5px 5px 20px grey;
+    }
