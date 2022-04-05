@@ -1,20 +1,21 @@
 html {
-  font-size: 14px;
+    font-size: 14px;
 }
 
 @media (min-width: 768px) {
-  html {
-    font-size: 16px;
-  }
+    html {
+        font-size: 16px;
+    }
 }
 
 html {
-  position: relative;
-  min-height: 100%;
+    position: relative;
+    min-height: 100%;
 }
 
 body {
-  background-color: #F3FFF8;
+    background-color: #F3FFF8;
+    color: dimgrey;
 }
 
 .bg-dark-green {
@@ -32,3 +33,58 @@ body {
     .index-btn:hover {
         box-shadow: 5px 5px 20px grey;
     }
+
+.team-name {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #71A389;
+}
+
+.profile-container {
+    margin: 20px;
+}
+
+.about-desc {
+    font-size: 1.5rem;
+    margin: 50px 60px;
+    text-align: justify;
+}
+
+.about-initially-header {
+    color: #71A389;
+    margin: 50px 0;
+    font-size: 4rem;
+    font-weight: 700;
+    letter-spacing: 5px;
+}
+
+.about-secondary-header {
+    color: #71A389;
+    font-size: 2.8rem;
+    font-weight: 700;
+    margin-top: 50px;
+    letter-spacing: 3px;
+}
+
+.profile-card {
+    margin: 8px;
+}
+
+.profile-card-image {
+    max-width: 100%;
+    border-radius: 5px;
+    box-shadow: 10px 10px 10px grey;
+}
+
+.profile-card-name {
+    margin: 10px;
+}
+
+.profile-card-position {
+    margin: 10px;
+}
+
+.profile-card-desc {
+    padding: 5px;
+    text-align: justify;
+}

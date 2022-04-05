@@ -18,6 +18,16 @@ namespace green_space.Controllers
             return View();
         }
 
+        public IActionResult About()
+        {
+            return View();
+        }
+
+        public IActionResult Coming()
+        {
+            return View();
+        }
+
         public IActionResult Privacy()
         {
             return View();
