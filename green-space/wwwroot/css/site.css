@@ -22,6 +22,27 @@ body {
     background-color: #71A389;
 }
 
+.index-container {
+    padding: 50px 60px;
+}
+
+.index-header {
+    margin: 50px 0;
+    letter-spacing: 5px;
+    font-size: 4rem;
+    font-weight: 700;
+}
+
+.index-image-container {
+    padding: 80px 0;
+}
+
+.index-image {
+    object-fit: contain;
+    max-width: 100%;
+}
+
+
 .index-btn {
     margin: 50px;
     background-color: #71A389;
