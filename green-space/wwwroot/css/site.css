@@ -24,14 +24,36 @@ body {
 
 .index-container {
     padding: 50px 60px;
+    text-align: center;
 }
 
-.index-header {
-    margin: 50px 0;
-    letter-spacing: 5px;
-    font-size: 4rem;
-    font-weight: 700;
-}
+    .index-container .index-header {
+        margin: 50px 0;
+        letter-spacing: 5px;
+        font-size: 4rem;
+        font-weight: 700;
+    }
+
+    .index-container p {
+        font-size: 1.5rem;
+        letter-spacing: 2px;
+        margin: 30px 0px;
+    }
+
+    .index-container .index-btn {
+        font-size: 1.5rem;
+        display: inline-block;
+        text-align: center;
+        text-decoration: none;
+        margin: 30px;
+        background-color: #71A389;
+        padding: 20px 50px;
+        border-radius: 100px;
+        transition: all 0.3s;
+    }
+        .index-container .index-btn:hover {
+            box-shadow: 5px 5px 20px grey;
+        }
 
 .index-image-container {
     padding: 80px 0;
@@ -41,19 +63,6 @@ body {
     object-fit: contain;
     max-width: 100%;
 }
-
-
-.index-btn {
-    margin: 50px;
-    background-color: #71A389;
-    padding: 20px 50px;
-    border-radius: 100px;
-    transition: all 0.3s;
-}
-
-    .index-btn:hover {
-        box-shadow: 5px 5px 20px grey;
-    }
 
 .team-name {
     font-size: 2rem;
