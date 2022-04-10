@@ -23,7 +23,9 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="wwwroot\新文件夹\" />
+    <None Remove="Views\Plants\" />
   </ItemGroup>
-
+  <ItemGroup>
+    <Folder Include="Views\Plants\" />
+  </ItemGroup>
 </Project>

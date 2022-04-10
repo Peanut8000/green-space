@@ -1,0 +1,45 @@
+﻿@model List<green_space.Models.Plant>
+@{
+    ViewData["Title"] = "Plants";
+}
+<section>
+    <h1>Plants</h1>
+    <table id="datatable" class="table table-striped" style="width:100%">
+        <thead>
+            <tr>
+                <th>Latin Name</th>
+                <th>Common Name</th>
+                <th>Family</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var plant in Model)
+            {
+                <tr>
+                    <td>@plant.LatinName</td>
+                    <td>@plant.CommonName</td>
+                    <td>@plant.Family.Name</td>
+                </tr>
+            }
+        </tbody>
+        <tfoot>
+            <tr>
+                <th>Latin Name</th>
+                <th>Common Name</th>
+                <th>Family</th>
+            </tr>
+        </tfoot>
+    </table>
+</section>
+
+@section style {
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.11.5/css/jquery.dataTables.min.css" />
+}
+
+@section scripts {
+    <script type="text/javascript" src="https://cdn.datatables.net/1.11.5/js/jquery.dataTables.min.js"></script>
+    <script type="text/javascript" src="https://cdn.datatables.net/1.11.5/js/dataTables.bootstrap5.min.js"></script>
+    <script>$(document).ready(function () {
+            $('#datatable').DataTable();
+        });</script>
+}
