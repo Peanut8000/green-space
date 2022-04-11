@@ -1,0 +1,23 @@
+@model green_space.Models.Plant
+@{
+    ViewData["Title"] = "Plants";
+}
+<section>
+    <h1>Plant Information</h1>
+
+    <h1>@Model.LatinName</h1>
+
+    <div class="row">
+        <div class="col">
+            <p>Common Name: @Model.CommonName</p>
+        </div>
+        <div class="col">
+            <p>Family: @Model.Family.Name</p>
+        </div>
+    </div>
+
+    <div>
+        <p>@Model.Description</p>
+    </div>
+
+</section>

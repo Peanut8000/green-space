@@ -41,15 +41,17 @@
                 <th>Latin Name</th>
                 <th>Common Name</th>
                 <th>Family</th>
+                <th></th>
             </tr>
         </thead>
         <tbody>
             @foreach (var plant in Model)
             {
                 <tr>
-                    <td>@plant.LatinName</td>
+                    <td><a>@plant.LatinName</a></td>
                     <td>@plant.CommonName</td>
                     <td>@plant.Family.Name</td>
+                    <td><a asp-action="Details" asp-route-id="@plant.Id">Details</a></td>
                 </tr>
             }
         </tbody>
@@ -58,6 +60,7 @@
                 <th>Latin Name</th>
                 <th>Common Name</th>
                 <th>Family</th>
+                <th></th>
             </tr>
         </tfoot>
     </table>
