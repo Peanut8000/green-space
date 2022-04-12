@@ -4,20 +4,25 @@
 }
 <section>
     <h1>Plant Information</h1>
+    
+    <div class="index-image-container">
+        <img class="index-image" src="https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fpic.123huodong.com%2F202006%2F05%2F21584320104.jpg&refer=http%3A%2F%2Fpic.123huodong.com&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=auto?sec=1652331658&t=f4bc26b1f99a58e81593445d618a7e11" />
+    </div>
 
-    <h1>@Model.LatinName</h1>
+
+    <h1><b>@Model.LatinName</b></h1>
 
     <div class="row">
         <div class="col">
-            <p>Common Name: @Model.CommonName</p>
+            <h3><b>Common Name:</b> @Model.CommonName</h3>
         </div>
         <div class="col">
-            <p>Family: @Model.Family.Name</p>
+            <h3><b>Family:</b> @Model.Family.Name</h3>
         </div>
     </div>
 
     <div>
-        <p>@Model.Description</p>
+        <h3>@Model.Description</h3>
     </div>
 
 </section>

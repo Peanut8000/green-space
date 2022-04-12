@@ -1,5 +1,6 @@
 ﻿using green_space.Data;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 
 namespace green_space.Controllers
 {
@@ -15,14 +16,14 @@ namespace green_space.Controllers
         // GET: /<controller>/
         public IActionResult Index()
         {
-            var plants = _context.Plants.ToList();
+            var plants = _context.Plants.Include("Family").ToList();
             return View(plants);
         }
 
         // GET: /<controller>/details/{id}
         public IActionResult Details(int id)
         {
-            var plant = _context.Plants.Where(p => p.Id == id).FirstOrDefault();
+            var plant = _context.Plants.Include("Family").Where(p => p.Id == id).FirstOrDefault(); ;
             return View(plant);
         }
 
